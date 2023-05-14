@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 999;
+}
+
+.ion-navicon-round {
+    display: none;
+}
+
+.header {
+    display: flex;
+}
+
+header div img {
+    width: 180px;
+    height: 80px;
+    margin-top: 2px;
+    margin-left: -15px;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: -25px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opcije {
+    list-style: none;
+}
+
+.opcije li {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.header-right i {
+    margin: 7% 15px;
+}
+
+.opcije li a:link,
+.opcijeli a:visited {
+    padding: 3px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-size: 150%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.opcije li a:hover,
+.opcije li a:active {
+    color: black;
+    border-bottom: 2px solid #585858;
+}
+
+.prazan {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.opcije li a {
+    color: lightslategray;
+}
+
+.video {
+    height: 350px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video p {
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+    margin-bottom: 10px;
+}
+
+.zvuk {
+    width: 100%;
+}
+
+audio {
+    margin-top: 90px;
+    margin-left: 40%;
+}
+
+.galerija1 img {
+    width: 90%;
+    height: 250px;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+    opacity: 0.9;
+    border-left: black 4px solid;
+    border-right: black 4px solid;
+    border-radius: 5px;
+}
+
+.galerija2 img {
+    width: 90%;
+    height: 250px;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+    opacity: 0.9;
+    border-left: black 4px solid;
+    border-right: black 4px solid;
+    border-radius: 5px;
+}
+
+.galerija3 img {
+    width: 90%;
+    height: 250px;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+    opacity: 0.9;
+    border-left: black 4px solid;
+    border-right: black 4px solid;
+    border-radius: 5px;
+}
+
+.naslov-galerija {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.galerija {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.galerija1 img:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.galerija2 img:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.galerija3 img:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+body {
+    background-color: #E0E0E0;
+}
+
+@media only screen and (max-width: 800px) {
+    .opcije li {
+        display: none;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header img {
+        width: 90px;
+        padding-left: 8%;
+    }
+    header h1 {
+        font-size: 35px;
+        padding-top: 3%;
+        padding-left: 40px;
+    }
+    .ion-navicon-round {
+        display: contents;
+        font-size: 250%;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        padding-left: 3%;
+        padding-top: 3%;
+        cursor: pointer;
+    }
+    .header-right:hover .opcije li {
+        display: inline-block;
+    }
+    .header-right:hover .opcije li a {
+        margin-right: 0;
+    }
+    .header-right:hover i {
+        display: none;
+    }
+    .opcije:hover {
+        font-size: 15px;
+        background: linear-gradient(0deg, #b3b2b2, white 90%);
+        position: absolute;
+        padding: 3% 3%;
+        width: 150px;
+        height: 220px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        right: 0;
+        top: 0;
+        transition: 1s ease;
+    }
+    .opcije li a:hover,
+    .opcije li a:active {
+        color: black;
+        border-bottom: 2px solid #585858;
+    }
+    .zvuk {
+        width: 50%;
+    }
+    audio {
+        margin: 90px 10% 0 20%;
+    }
+    .video iframe {
+        width: 100%;
+    }
+    .galerija {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .naslov-galerija {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
+    .opcije li {
+        display: none;
+    }
+    header h1 {
+        font-size: 45px;
+        padding-top: 3%;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ion-navicon-round {
+        display: contents;
+        font-size: 250%;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        padding-left: 40%;
+        padding-top: 2%;
+        cursor: pointer;
+    }
+    .header-right {
+        margin-right: 3%;
+        margin-top: 10px;
+    }
+    .header-right:hover .opcije li {
+        display: inline-block;
+    }
+    .header-right:hover .opcije li a {
+        margin-right: 0;
+    }
+    .header-right:hover i {
+        display: none;
+    }
+    .opcije:hover {
+        font-size: 20px;
+        background: linear-gradient(0deg, #b3b2b2, white 90%);
+        position: absolute;
+        padding: 3% 3%;
+        width: 200px;
+        height: 230px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        right: 0;
+        top: 0;
+        transition: 1s ease;
+    }
+    .opcije li a:hover,
+    .opcije li a:active {
+        color: black;
+        border-bottom: 2px solid #585858;
+    }
+    .zvuk {
+        width: 50%;
+        margin: 0 25%;
+    }
+    audio {
+        margin: 90px 10% 0 10%;
+    }
+    .video iframe {
+        width: 100%;
+    }
+    .galerija {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galerija1,
+    .galerija2,
+    .galerija3 {
+        flex: 50%;
+    }
+    .galerija3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galerija3 img {
+        flex: 30%;
+    }
+    .naslov-galerija {
+        padding-bottom: 25px;
+    }
+}

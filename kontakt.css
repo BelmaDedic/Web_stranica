@@ -1,0 +1,480 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #F0F0F0;
+    }
+    
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        margin-bottom: 20px;
+    }
+    
+    .ion-navicon-round {
+        display: none;
+    }
+    
+    .header {
+        display: flex;
+    }
+    
+    header div img {
+        width: 180px;
+        height: 80px;
+        margin-top: 2px;
+        margin-left: -15px;
+    }
+    
+    header h1 {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: -25px;
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .opcije {
+        list-style: none;
+    }
+    
+    .opcije li {
+        display: inline-block;
+        margin-top: 25px;
+    }
+    
+    .opcije li a:link,
+    .opcijeli a:visited {
+        padding: 3px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 50px;
+        font-size: 150%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+    
+    .opcije li a {
+        color: #686868;
+    }
+    
+    .opcije li a:hover,
+    .opcije li a:active {
+        color: black;
+        border-bottom: 2px solid #989898;
+    }
+    
+    .prazan {
+        background-color: white;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .ukupno {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .sadrzaj {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .sadrzaj p {
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 40px;
+        font-style: italic;
+    }
+    
+    .header-right i {
+        margin: 7% 15px;
+    }
+    
+    .podaci {
+        margin-top: 20px;
+        margin-left: 50px;
+        line-height: 30px;
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .kontakt {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        font-size: 125%;
+        margin-right: 10px;
+        line-height: 130%;
+        vertical-align: middle;
+    }
+    
+    .podaci a:link,
+    .podaci a:visited {
+        padding: 1px 0;
+        text-decoration: none;
+        margin-right: 50px;
+        font-size: 20px;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+    
+    .podaci a {
+        color: black;
+    }
+    
+    .podaci a:hover,
+    .podaci a:active {
+        color: darkred;
+    }
+    
+    .ion-social-facebook,
+    .ion-social-linkedin,
+    .ion-social-whatsapp,
+    .ion-social-instagram,
+    .ion-ios-email {
+        transition: color 0.2s;
+    }
+    
+    .ion-social-facebook:hover {
+        color: #3b5998;
+    }
+    
+    .ion-social-linkedin:hover {
+        color: #007bb5;
+    }
+    
+    .ion-ios-email:hover {
+        color: #F00F00;
+    }
+    
+    .ion-social-instagram:hover {
+        color: #e95950;
+    }
+    
+    .ion-social-whatsapp:hover {
+        color: #4dc247;
+    }
+    
+    .ion-ios-telephone:hover {
+        color: #7f8ff9;
+    }
+    
+    .ion-ios-location:hover {
+        color: #960a0a;
+    }
+    
+    iframe {
+        margin-top: 30px;
+        margin-right: 45px;
+        width: 100%;
+        height: 320px;
+    }
+    
+    .lokacija {
+        display: flex;
+    }
+    
+    .lokacija .ion-ios-location,
+    .lokacija div {
+        margin-top: 55px;
+    }
+    
+    .lokacija div {
+        margin-top: 57px;
+        width: 300px;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .lokacija .ion-ios-location {
+        margin-left: -542px;
+    }
+    
+    .lokacija .ion-ios-location {
+        width: 30px;
+        text-align: center;
+        font-size: 145%;
+        margin-right: 10px;
+        line-height: 130%;
+        vertical-align: middle;
+    }
+    
+    .lokacija p {
+        margin-top: 15px;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic;
+    }
+    
+    .lokacija {
+        margin-top: -80px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .prijava {
+        margin-left: 20px;
+        margin-bottom: 50px;
+        margin-top: 55px;
+        width: 80%;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    table {
+        width: 33%;
+        margin-left: 37%;
+    }
+    
+    form {
+        width: 100%;
+        text-align: justify;
+        line-height: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        font-style: italic;
+        font-weight: 545;
+    }
+    
+    textarea {
+        height: 100px;
+        width: 250px;
+        font-style: italic;
+        border: 1px solid #808080;
+    }
+    
+    input[type=submit] {
+        display: inline-block;
+        padding: 10px 20px;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 200px;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+    input[type=submit] {
+        background-color: #BEBEBE;
+        border: 1px solid #202020;
+        color: #000;
+        margin-left: -65px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .opcije li {
+            display: none;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header img {
+            width: 90px;
+            padding-left: 8%;
+        }
+        header h1 {
+            font-size: 35px;
+            padding-top: 3%;
+            padding-left: 40px;
+        }
+        .ion-navicon-round {
+            display: contents;
+            font-size: 250%;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            padding-left: 3%;
+            padding-top: 3%;
+            cursor: pointer;
+        }
+        .header-right:hover .opcije li {
+            display: inline-block;
+        }
+        .header-right:hover .opcije li a {
+            margin-right: 0;
+        }
+        .header-right:hover i {
+            display: none;
+        }
+        .opcije:hover {
+            font-size: 15px;
+            background: linear-gradient(0deg, #b3b2b2, white 90%);
+            position: absolute;
+            padding: 3% 3%;
+            width: 150px;
+            height: 220px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            right: 0;
+            top: 0;
+            transition: 1s ease;
+        }
+        .opcije li a:hover,
+        .opcije li a:active {
+            color: black;
+            border-bottom: 2px solid #989898;
+        }
+        iframe {
+            margin: 15px 5%;
+        }
+        .ukupno {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .podaci,
+        iframe {
+            flex: 30%;
+        }
+        .lokacija {
+            display: none;
+        }
+        form {
+            width: 100%;
+        }
+        table {
+            width: 90%;
+            margin: 0 5%;
+        }
+        .contact-form {
+            width: 80%;
+        }
+        textarea {
+            height: 80px;
+            width: 200px;
+        }
+    }
+    
+    @media only screen and (min-width: 760px) and (max-width: 1200px) {
+        .opcije li {
+            display: none;
+        }
+        header h1 {
+            font-size: 45px;
+            padding-top: 3%;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ion-navicon-round {
+            display: contents;
+            font-size: 250%;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            padding-left: 40%;
+            padding-top: 2%;
+            cursor: pointer;
+        }
+        .header-right {
+            margin-right: 3%;
+            margin-top: 10px;
+        }
+        .header-right:hover .opcije li {
+            display: inline-block;
+        }
+        .header-right:hover .opcije li a {
+            margin-right: 0;
+        }
+        .header-right:hover i {
+            display: none;
+        }
+        .opcije:hover {
+            font-size: 20px;
+            background: linear-gradient(0deg, #b3b2b2, white 90%);
+            position: absolute;
+            padding: 3% 3%;
+            width: 200px;
+            height: 230px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            right: 0;
+            top: 0;
+            transition: 1s ease;
+        }
+        .opcije li a:hover,
+        .opcije li a:active {
+            color: black;
+            border-bottom: 2px solid #989898;
+        }
+        .sadrzaj p {
+            font-size: 25px;
+        }
+        .podaci a:link,
+        .podaci a:visited {
+            font-size: 25px;
+        }
+        .kontakt {
+            font-size: 25px;
+        }
+        iframe {
+            margin: 25px 5%;
+            height: 450px;
+        }
+        .ukupno {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .podaci,
+        iframe {
+            flex: 30%;
+        }
+        .lokacija {
+            display: none;
+        }
+        .ukupno {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .podaci,
+        iframe {
+            flex: 50%;
+        }
+        .prijava {
+            font-size: 25px;
+        }
+        .contact-form {
+            width: 95%;
+            font-size: 23px;
+            font-weight: 40px;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=file] {
+            font-size: 20px;
+        }
+        textarea {
+            font-size: 20px;
+            width: 230px;
+        }
+        input[type=submit] {
+            font-size: 23px;
+        }
+        select {
+            font-size: 20px;
+        }
+        option {
+            font-size: 20px;
+        }
+    }
